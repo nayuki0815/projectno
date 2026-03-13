@@ -73,3 +73,48 @@ body {
 .animate-title {
   animation: titleFade 1.4s ease forwards;
 }
+
+
+@keyframes titleFade {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+		filter: blur(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+		filter: blur(0);
+	}
+}
+
+.animate-title {
+	animation: titleFade 1.4s ease forwards;
+}
+
+.sig-char {
+  display: inline-block;
+  opacity: 0;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.6);
+  animation: sigReveal 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes sigReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(4px) rotate(-8deg);
+    filter: blur(3px);
+  }
+  60% {
+    opacity: 0.8;
+    filter: blur(0.5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+    filter: blur(0);
+  }
+}
