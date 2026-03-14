@@ -102,66 +102,75 @@ sigEl?.appendChild(span);
 		<main className="relative min-h-screen overflow-hidden bg-black text-white">
 			<div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_45%,rgba(255,255,255,0.06),transparent_28%)]" />
 
-			<div className="relative flex min-h-screen items-center justify-end px-10 md:px-20">
-				<div className="animate-title text-right">
-					<h1 className="leading-none">
-						<div
-							className="block md:translate-x-2"
-							style={{ animationDelay: "1.5s" }}
-						>
-							<div>
-								<span className="text-[56px] font-extralight tracking-[0.22em] text-white/88 md:text-[55px]">
-									office PROJECT.NO
-								</span>
-							</div>
 
-							<div className="mt-4">
-								<span className="text-[28px] font-extralight tracking-[0.28em] text-white/48 md:text-[40px]">
-									_2nd
-								</span>
-							</div>
-						</div>
-					</h1>
 
-					<div className="mt-12 ml-auto h-px w-28 bg-white/12" />
 
-					<div className="mt-10 space-y-3 text-[12px] tracking-[0.32em] text-white/28 md:text-[13px]">
-						<p>Building systems.</p>
-						<p>Designing structure.</p>
-						<p>& Shaping strategy.</p>
-					</div>
+	<div className="relative flex min-h-screen items-center justify-end px-6 md:px-20">
+	<div className="animate-title text-right">
+		<h1 className="leading-none">
+			<div
+				className="block md:translate-x-2"
+				style={{ animationDelay: "1.5s" }}
+			>
+<div>
+	<span className="block text-[34px] font-extralight tracking-[0.12em] text-white/88 sm:text-[42px] md:text-[55px] md:tracking-[0.22em]">
+		office
+	</span>
+	<span className="mt-2 block text-[34px] font-extralight tracking-[0.12em] text-white/88 sm:text-[42px] md:text-[55px] md:tracking-[0.22em]">
+		PROJECT.NO
+	</span>
+</div>
+
+				<div className="mt-4">
+					<span className="text-[20px] font-extralight tracking-[0.18em] text-white/48 sm:text-[26px] md:text-[40px] md:tracking-[0.28em]">
+						_2nd
+					</span>
 				</div>
 			</div>
+		</h1>
 
-			<div
-				id="vpWrapper"
-				className="absolute bottom-50 left-1/2 -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-700 [transition-timing-function:cubic-bezier(0.22,1,0.36,1)]"
-			>
-				<Link
-					id="vpLink"
-					href="/gateway"
-					className="group inline-flex flex-col items-center gap-1.5"
-				>
-					<span
-						id="vpText"
-						className="text-[11px] tracking-[0.32em] text-white/48 transition-all duration-500 group-hover:text-[#D4AF37] group-hover:[text-shadow:0_0_12px_rgba(212,175,55,0.55)]"
-					>
-						VIEW PROFILE
-					</span>
+		<div className="mt-10 ml-auto h-px w-20 bg-white/12 md:mt-12 md:w-28" />
 
-					<span
-						id="vpArrow"
-						className="text-[10px] -translate-y-1 opacity-0 transition-all duration-500"
-						style={{ color: "rgba(212,175,55,0)" }}
-					>
-						↓
-					</span>
-				</Link>
-			</div>
+		<div className="mt-8 space-y-3 text-[11px] tracking-[0.22em] text-white/28 md:mt-10 md:text-[13px] md:tracking-[0.32em]">
+			<p>Building systems.</p>
+			<p>Designing structure.</p>
+			<p>& Shaping strategy.</p>
+		</div>
+	</div>
+</div>
 
-			<div className="absolute bottom-14 left-8 text-[14px] text-white/36 md:bottom-16 md:left-20">
-				<span ref={sigRef} />
-			</div>
+<div
+	id="vpWrapper"
+	className="absolute bottom-24 left-1/2 -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-700 [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] md:bottom-40"
+>
+	<Link
+		id="vpLink"
+		href="/gateway"
+		className="group inline-flex flex-col items-center gap-1.5"
+	>
+		<span
+			id="vpText"
+			className="text-[10px] tracking-[0.24em] whitespace-nowrap text-white/48 transition-all duration-500 group-hover:text-[#D4AF37] group-hover:[text-shadow:0_0_12px_rgba(212,175,55,0.55)] md:text-[11px] md:tracking-[0.32em]"
+		>
+			VIEW PROFILE
+		</span>
+
+		<span
+			id="vpArrow"
+			className="text-[10px] -translate-y-1 opacity-0 transition-all duration-500"
+			style={{ color: "rgba(212,175,55,0)" }}
+		>
+			↓
+		</span>
+	</Link>
+</div>
+
+<div className="absolute bottom-8 left-6 text-[12px] text-white/36 md:bottom-16 md:left-20 md:text-[14px]">
+	<span ref={sigRef} />
+</div>
+
+
+
 		</main>
 	);
 }
