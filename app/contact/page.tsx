@@ -29,12 +29,12 @@ export default function ContactPage() {
 				<div className="mt-14 rounded-3xl border border-white/10 bg-white/[0.02] p-8">
 					<p className="text-[11px] tracking-[0.24em] text-white/35">EMAIL</p>
 
-					<a
-						href="mailto:contact@example.com"
-						className="mt-5 inline-block text-lg font-light tracking-[0.04em] text-white/85 underline underline-offset-4 transition hover:text-white"
-					>
-						programme.tact.nayuki0815@gmail.com
-					</a>
+<a
+	href="mailto:contact@example.com"
+	className="mt-5 block break-all text-base font-light tracking-[0.02em] text-white/85 underline underline-offset-4 transition hover:text-white md:text-lg md:tracking-[0.04em]"
+>
+	programme.tact.nayuki0815@gmail.com
+</a>
 
 					<p className="mt-6 text-sm leading-7 tracking-[0.04em] text-white/45">
 						内容確認後、順次ご返信いたします。
