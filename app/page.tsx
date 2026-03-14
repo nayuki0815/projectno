@@ -150,7 +150,7 @@ export default function Home() {
 		<main className="relative min-h-screen overflow-hidden bg-black text-white">
 			<div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_45%,rgba(255,255,255,0.06),transparent_28%)]" />
 
-			<div className="relative flex min-h-screen flex-col px-6 pt-12 pb-12 md:px-20 md:py-0">
+			<div className="relative flex min-h-screen flex-col px-6 pt-24 pb-12 md:px-20 md:py-0">
 
 				{/* タイトル */}
 				<div className="flex justify-end md:hidden pt-4">
