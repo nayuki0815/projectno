@@ -27,7 +27,7 @@ export default function Home() {
 				const span = document.createElement("span");
 				span.className = "sig-char";
 				span.textContent = text[i] === " " ? "\u00A0" : text[i];
-				sigEl.appendChild(span);
+sigEl?.appendChild(span);
 				i++;
 				addTimeout(typeChar, 80);
 			} else {
