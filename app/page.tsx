@@ -219,13 +219,13 @@ export default function Home() {
 							>
 								VIEW PROFILE
 							</span>
-							<span
+							{/* <span
 								id="vpArrow"
 								className="text-[10px] -translate-y-1 opacity-0 transition-all duration-500"
 								style={{ color: "rgba(212,175,55,0)" }}
 							>
 								↓
-							</span>
+							</span> */}
 						</Link>
 					</div>
 					<div className="text-[12px] text-white/36">
@@ -245,13 +245,13 @@ export default function Home() {
 						>
 							VIEW PROFILE
 						</span>
-						<span
+						{/* <span
 							id="vpArrowPc"
 							className="text-[10px] -translate-y-1 opacity-0 transition-all duration-500"
 							style={{ color: "rgba(212,175,55,0)" }}
 						>
 							↓
-						</span>
+						</span> */}
 					</Link>
 				</div>
 
