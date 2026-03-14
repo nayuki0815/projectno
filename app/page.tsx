@@ -100,19 +100,16 @@ export default function Home() {
 		<main className="relative min-h-screen overflow-hidden bg-black text-white">
 			<div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_45%,rgba(255,255,255,0.06),transparent_28%)]" />
 
-			<div className="relative flex min-h-screen items-start justify-end px-6 pt-16 md:items-center md:px-20 md:pt-0">
+			{/* PC: 右中央寄せ / スマホ: 上部に配置 */}
+			<div className="relative flex min-h-screen items-center justify-end px-6 md:px-20">
 				<div className="animate-title max-w-[88vw] text-right md:max-w-none">
 					<h1 className="leading-none">
-						<div
-							className="block md:translate-x-2"
-							style={{ animationDelay: "1.5s" }}
-						>
+						<div className="block md:translate-x-2" style={{ animationDelay: "1.5s" }}>
 							<div>
 								<span className="text-[34px] font-extralight tracking-[0.1em] text-white/88 sm:text-[42px] md:text-[55px] md:tracking-[0.22em]">
 									office PROJECT.NO
 								</span>
 							</div>
-
 							<div className="mt-3 md:mt-4">
 								<span className="text-[20px] font-extralight tracking-[0.16em] text-white/48 sm:text-[24px] md:text-[40px] md:tracking-[0.28em]">
 									_2nd
@@ -131,9 +128,10 @@ export default function Home() {
 				</div>
 			</div>
 
+			{/* VIEW PROFILE: スマホ・PCともにabsolute、スマホはbottom高め */}
 			<div
 				id="vpWrapper"
-				className="absolute bottom-16 left-1/2 -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-700 [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] md:bottom-40"
+				className="absolute bottom-20 left-1/2 -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-700 [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] md:bottom-40"
 			>
 				<Link
 					id="vpLink"
@@ -146,7 +144,6 @@ export default function Home() {
 					>
 						VIEW PROFILE
 					</span>
-
 					<span
 						id="vpArrow"
 						className="text-[10px] -translate-y-1 opacity-0 transition-all duration-500"
@@ -157,7 +154,8 @@ export default function Home() {
 				</Link>
 			</div>
 
-			<div className="absolute bottom-6 left-6 text-[12px] text-white/36 md:bottom-16 md:left-20 md:text-[14px]">
+			{/* produced by: スマホ・PCともにabsolute */}
+			<div className="absolute bottom-8 left-6 text-[12px] text-white/36 md:bottom-16 md:left-20 md:text-[14px]">
 				<span ref={sigRef} />
 			</div>
 		</main>
